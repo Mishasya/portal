@@ -1,0 +1,47 @@
+.presentation-cameras {
+  @include list-reset;
+  @include grid(2);
+
+  margin: 0;
+  padding: 0 100px;
+}
+
+.presentation-cameras__item {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+}
+
+.presentation-cameras__title {
+  margin-bottom: 10px;
+}
+
+.presentation-cameras__descr {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: var(--color-gray-text);
+}
+
+.presentation-cameras__learn-more {
+  margin-top: auto;
+}
+
+@include tablet {
+  .presentation-cameras__descr {
+    font-size: 15px;
+  }
+}
+
+@include mobile {
+  .presentation-cameras {
+    @include columns(1);
+
+    padding: 0;
+    gap: 2em;
+  }
+
+  .presentation-cameras__item {
+    max-width: 90%;
+  }
+}

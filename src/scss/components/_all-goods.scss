@@ -1,0 +1,19 @@
+.all-goods {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.all-goods__list.goods-list {
+  margin-bottom: 41px;
+}
+
+.all-goods__btn-more {
+  margin: 0 auto;
+}
+
+@include mobile {
+  .all-goods__list.goods-list {
+    margin-bottom: 30px;
+  }
+}

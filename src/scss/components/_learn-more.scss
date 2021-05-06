@@ -1,0 +1,18 @@
+.learn-more {
+  // padding: 5px;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  color: var(--color-dark-text);
+  transition: text-decoration-color 0.3s;
+  text-decoration-thickness: 2px;
+
+  &:hover,
+  &:active {
+    text-decoration-color: inherit;
+  }
+
+  &--white {
+    color: var(--color-white);
+  }
+}

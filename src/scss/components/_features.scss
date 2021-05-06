@@ -1,0 +1,102 @@
+
+.features {
+  background: linear-gradient(#fff 75%, #d0e7ea 75%);
+}
+
+.features__container {
+  padding-top: 100px;
+}
+
+.features__title {
+  margin-bottom: 20px;
+  padding-top: 73px;
+  background-image: url("../img/alexa-icon.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.features__descr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.features__descr-inner {
+  max-width: 422px;
+}
+
+.features__img-inner {
+  margin: 0;
+  margin-top: -12px;
+  width: 55.6%;
+}
+
+.features__img {
+  margin-bottom: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.features__img-descr {
+  margin: 0 auto;
+  max-width: 465px;
+  font-size: 11px;
+  text-align: center;
+  color: var(--color-light-text);
+}
+
+.features__text {
+  margin: 0;
+  margin-bottom: 46px;
+  font-size: 17px;
+  color: var(--color-gray-text);
+}
+
+.features__learn-more {
+  display: inline-block;
+  padding: 13px 25px;
+  text-decoration: none;
+  background-color: var(--color-light-blue);
+  transition: background-color 0.3s;
+}
+
+@include tablet {
+  .features__container {
+    padding-top: 70px;
+  }
+
+  .features__descr-inner {
+    max-width: 49%;
+  }
+
+  .features__text {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
+  .features__img-inner {
+    margin-top: -6px;
+    max-width: 47%;
+  }
+}
+
+@include mobile {
+  .features__descr-inner {
+    margin-bottom: 30px;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .features__title {
+    background-position-x: center;
+  }
+
+  .features__img-inner {
+    margin: auto;
+    margin-top: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+}

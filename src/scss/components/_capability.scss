@@ -1,0 +1,29 @@
+.capability {
+  @include bg-cover;
+
+  overflow-y: hidden;
+  min-height: 720px;
+  background-image: url("../img/capability-bg.jpg");
+}
+
+.capability__container {
+  position: relative;
+  padding-top: 277px;
+}
+
+@include tablet {
+  .capability {
+    min-height: 620px;
+  }
+
+  .capability__container {
+    padding-top: 230px;
+  }
+}
+
+@include mobile {
+  .capability {
+    min-height: 630px;
+    background-position-x: 66%;
+  }
+}

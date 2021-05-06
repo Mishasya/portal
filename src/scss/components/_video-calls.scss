@@ -1,0 +1,118 @@
+.video-calls__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1064px;
+}
+
+.video-calls__inner-text {
+  max-width: 504px;
+}
+
+.video-calls__img-inner {
+  width: 38.3%;
+}
+
+.video-calls__img {
+  width: 100%;
+  height: auto;
+}
+
+.video-calls__icon-inner {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.video-calls__icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &--fb {
+    background-image: url("../img/fb-icon.svg");
+    background-color: var(--color-bg-fb);
+  }
+
+  &--wapp {
+    background-image: url("../img/wapp-icon.svg");
+    background-color: var(--color-bg-whatsapp);
+  }
+}
+
+.video-calls__title {
+  margin-bottom: 19px;
+}
+
+.video-calls__descr {
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--color-gray-text);
+}
+
+.video-calls__small {
+  font-size: 11px;
+  color: #aeaba8;
+}
+
+.video-calls__learn-more {
+  padding: 0;
+  font-size: 11px;
+  text-decoration: underline;
+  color: #aeaba8;
+  transition: color 0.3s;
+  text-decoration-thickness: 2px;
+
+  &:hover,
+  &:active {
+    color: var(--color-gray-text);
+  }
+}
+
+@include tablet {
+  .video-calls__inner-text {
+    max-width: 50%;
+  }
+
+  .video-calls__descr {
+    font-size: 15px;
+  }
+}
+
+@include mobile {
+  .video-calls__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .video-calls__img-inner {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 70%;
+    max-width: 360px;
+  }
+
+  .video-calls__inner-text {
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .video-calls__title {
+    max-width: 520px;
+  }
+
+  .video-calls__icon-inner {
+    justify-content: center;
+  }
+}

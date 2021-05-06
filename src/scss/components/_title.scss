@@ -1,0 +1,19 @@
+.title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+@include tablet {
+  .title {
+    font-size: 42px;
+  }
+}
+
+@include mobile {
+  .title {
+    margin: auto;
+    font-size: 34px;
+    text-align: center;
+  }
+}

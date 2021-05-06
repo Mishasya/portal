@@ -1,0 +1,16 @@
+.menu {
+  @include list-reset;
+}
+
+.menu__link {
+  padding: 10px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s;
+  text-decoration-thickness: 2px;
+
+  &:hover,
+  &:active {
+    text-decoration-color: inherit;
+  }
+}

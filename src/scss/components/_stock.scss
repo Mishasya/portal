@@ -1,0 +1,18 @@
+.stock {
+  padding: 22px;
+  padding-left: 100px;
+  max-width: 400px;
+  background-image: url("../img/stock-img.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: var(--color-pink);
+}
+
+.stock__offer {
+  margin: 0;
+  font-weight: 700;
+}
+
+.stock__text {
+  font-size: 14px;
+}

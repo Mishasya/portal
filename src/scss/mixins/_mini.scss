@@ -1,0 +1,54 @@
+@mixin columns($columns) {
+  grid-template-columns: repeat($columns, 1fr) [last];
+}
+
+@mixin grid($columns) {
+  @include columns($columns);
+
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+}
